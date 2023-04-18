@@ -1,13 +1,22 @@
-import Inputs from "./Components/Inputs/Inputs";
-import ToDoList from "./Components/To Does/To Do List/ToDoList";
+import React from "react";
+import ToDoList from "./components/ToDoesList";
 
 function App() {
+
   return (
     <div className="App">
+
       <header className="App-header">
-        <Inputs />
-        <ToDoList />
+        <h1>To Do List Name Header</h1>
+        <div className="inputsConteiner">
+          <input type="text" name="Name" placeholder="Name" />
+          <button>Submit</button>
+        </div>{/* inputsConteiner */}
+        
       </header>
+      <main>
+        <ToDoList />
+      </main>
     </div>
   );
 }
