@@ -6,7 +6,12 @@ const Inputs = (props) => {
   
   return (
     <div className="InputConteiner">
-      
+      <input
+        type="text"
+        placeholder="name"
+        value={props.toDoName}
+        onChange={(e) => props.setToDoName(e.target.value)}
+      />
       <input
         type="text"
         placeholder="description"
