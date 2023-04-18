@@ -1,24 +1,9 @@
 const Inputs = (props) => {
-  const handleSublit = (e) => {
-    e.preventDefault();
-    props.setToDoesArray(props.toDoesArray.push(props.newTask));
-  };
-  
   return (
     <div className="InputConteiner">
-      <input
-        type="text"
-        placeholder="name"
-        value={props.toDoName}
-        onChange={(e) => props.setToDoName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="description"
-        value={props.nameDescription}
-        onChange={(e) => props.setDescriptionTask(e.target.value)}
-      />
-      <button onClick={handleSublit}>submit</button>
+      <input placeholder="Name" />
+      <input placeholder="Description" />
+      <button>Submit</button>
     </div>
   );
 };
